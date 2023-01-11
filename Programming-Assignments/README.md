@@ -1,12 +1,4 @@
-# CS181 (Artificial Intelligence) Course
-
-This repository contains the programming assignments and final project done during the course CS181 (Artificial Intelligence), fall 2022, at ShanghaiTech University.
-
-Part of this course is based on [UC Berkeley's CS188](https://inst.eecs.berkeley.edu/~cs188/sp22/).
-
-**WARNING: You can utilize our implementations for reference or inspiration, but DO NOT violate the academic integrity requirements by copying any part of our code or assignments. We are NOT responsible for any potential penalities due to your plagiarism.**
-
-### [Programming Assignments](https://github.com/billhu0/CS181/tree/main/Programming-Assignments)
+## Programming Assignments
 
 - **[Project 1 Part A](https://github.com/billhu0/CS181/tree/main/Programming-Assignments/hw1a-search)**: Search
 - **[Project 1 Part B](https://github.com/billhu0/CS181/tree/main/Programming-Assignments/hw1b-multiagent)**: Multi-agent Pacman
@@ -15,8 +7,3 @@ Part of this course is based on [UC Berkeley's CS188](https://inst.eecs.berkeley
 - **[Project 4](https://github.com/billhu0/CS181/tree/main/Programming-Assignments/hw4-tracking)**: GhostBusters
 - **[Project 5](https://github.com/billhu0/CS181/tree/main/Programming-Assignments/hw5-reinforcement)**: Reinforcement Learning
 - **[Project 6](https://github.com/billhu0/CS181/tree/main/Programming-Assignments/hw6-machinelearning)**: Machine Learning
-
-
-### [Final Project](https://github.com/billhu0/AI-Aircraft-Warfare/)
-
-- An aircraft warfare game player, powered by Q-learning and DQN.
