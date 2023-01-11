@@ -1,0 +1,29 @@
+class: "OutputTest"
+success: "PASS"
+failure: "NO PASS"
+
+# Python statements initializing variables for the test below.
+preamble: """
+from inference import DiscreteDistribution
+
+dist = DiscreteDistribution()
+dist['a'] = 1
+dist['b'] = 2
+dist['c'] = 2
+dist['d'] = 0
+N = 100000.0
+samples = [dist.sample() for _ in range(int(N))]
+ans1 = round(samples.count('a') * 1.0/N, 1)  # proportion of 'a'
+ans2 = round(samples.count('b') * 1.0/N, 1)
+ans3 = round(samples.count('c') * 1.0/N, 1)
+ans4 = round(samples.count('d') * 1.0/N, 1)
+
+ans = map(str, [ans1, ans2, ans3, ans4])
+"""
+
+# A python expression to be evaluated.  This expression must return the 
+# same result for the student and instructor's code.
+
+test: "ans"
+
+

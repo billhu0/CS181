@@ -1,0 +1,6 @@
+.idea
+.vscode
+__pycache__
+*.tar
+*.pyc
+.DS_Store

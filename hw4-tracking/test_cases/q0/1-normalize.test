@@ -1,0 +1,30 @@
+class: "OutputTest"
+success: "PASS"
+failure: "NO PASS"
+
+# Python statements initializing variables for the test below.
+preamble: """
+from inference import DiscreteDistribution
+
+dist = DiscreteDistribution()
+dist['a'] = 1
+dist['b'] = 2
+dist['c'] = 2
+dist['d'] = 0
+dist.normalize()
+ans1 = str(list(sorted(dist.items())))
+dist['e'] = 4
+ans2 = str(list(sorted(dist.items())))
+empty = DiscreteDistribution()
+empty.normalize()
+ans3 = str(empty)
+
+ans = map(str, [ans1, ans2, ans3])
+"""
+
+# A python expression to be evaluated.  This expression must return the 
+# same result for the student and instructor's code.
+
+test: "ans"
+
+
